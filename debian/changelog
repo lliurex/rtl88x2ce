@@ -1,5 +1,5 @@
-rtl88x2ce (5.9.0.6) bionic; urgency=medium
+rtl88x2ce (5.9.0.6) focal; urgency=medium
 
   * Initial Release.
 
- -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 14 Sep 2021 13:18:44 +0200
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 7 Dic 2021 13:18:44 +0200
