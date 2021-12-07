@@ -1,0 +1,8 @@
+PACKAGE_NAME="rtl88x2ce"
+PACKAGE_VERSION="5.9.0.6"
+CLEAN="'make' clean"
+MAKE="KERNELDIR=/lib/modules/${kernelver}/build make"
+BUILT_MODULE_NAME="88x2ce"
+BUILD_MODULE_LOCATION="rtl88x2ce"
+DEST_MODULE_LOCATION="/kernel/drivers/net/wireless"
+AUTOINSTALL="yes"

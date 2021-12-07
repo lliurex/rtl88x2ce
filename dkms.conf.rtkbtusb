@@ -1,0 +1,8 @@
+PACKAGE_NAME="rtl8822cu"
+PACKAGE_VERSION="3.10"
+CLEAN="'make' clean"
+MAKE="'make'"
+BUILT_MODULE_NAME="rtk_btusb"
+BUILD_MODULE_LOCATION="rtl8822cu"
+DEST_MODULE_LOCATION="/kernel/drivers/bluetooth"
+AUTOINSTALL="yes"

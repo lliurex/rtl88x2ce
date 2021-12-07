@@ -1,0 +1,16 @@
+#!/bin/bash
+
+KVER=$(uname -r)
+
+[ ! -e /lib/modules/${KVER}/kernel/drivers/bluetooth/rtk_btusb.ko ] || exit 0
+
+mkdir -p /var/lib/rtk8822cu || true
+cd /var/lib/rtk8822cu/
+cp -r /usr/src/rtkbtusb_8822cu-3.10/* .
+
+make clean
+make
+module=`ls |grep -i 'ko'`
+make install
+modprobe -r ${module%.*}
+modprobe ${module%.*}

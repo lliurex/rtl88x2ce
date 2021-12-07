@@ -1,0 +1,16 @@
+#!/bin/bash
+
+KVER=$(uname -r)
+
+[ ! -e /lib/modules/${KVER}/kernel/drivers/net/wireless/88x2ce.ko ] || exit 0
+
+mkdir -p /var/lib/rtl88x2ce || true
+cd /var/lib/rtl88x2ce/
+cp -r /usr/src/rtl88x2ce-5.9.0.6/* .
+
+make clean
+make
+module=`ls |grep -i 'ko'`
+make install
+modprobe -r ${module%.*}
+modprobe ${module%.*}
