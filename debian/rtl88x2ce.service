@@ -1,0 +1,9 @@
+[Unit]
+Description=Build rtl88x2ce driver for kernels
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/build_rtl88x2ce_driver
+
+[Install]
+WantedBy=multi-user.target

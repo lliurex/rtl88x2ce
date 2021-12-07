@@ -1,0 +1,20 @@
+Source: rtl88x2ce
+Section: admin
+Priority: optional
+Maintainer: Raul Rodrigo Segura <raurodse@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+#Vcs-Browser: https://salsa.debian.org/debian/rtl88x2ce
+#Vcs-Git: https://salsa.debian.org/debian/rtl88x2ce.git
+
+Package: rtl88x2ce
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-headers | linux-kernel-headers | linux-headers-amd64, build-essential
+Description: Drivers to rtl88x2ce
+ Build system to install drivers to rtl88x2ce
+
+Package: rtkbtusb-8822cu
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-headers | linux-kernel-headers | linux-headers-amd64, build-essential
+Description: Drivers to rtkbtusb-8822cu
+ Build system to install drivers to rtkbtusb-8822cu

@@ -1,0 +1,9 @@
+[Unit]
+Description=Build rtkbtusb_8822 driver for kernels
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/build_rtkbtusb_8822cu_driver
+
+[Install]
+WantedBy=multi-user.target
